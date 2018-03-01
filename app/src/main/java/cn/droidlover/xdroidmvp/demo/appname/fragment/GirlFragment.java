@@ -1,4 +1,4 @@
-package cn.droidlover.xdroidmvp.demo.appname.ui.fragment;
+package cn.droidlover.xdroidmvp.demo.appname.fragment;
 
 import cn.droidlover.xdroidmvp.base.SimpleRecAdapter;
 import cn.droidlover.xdroidmvp.demo.adapter.GirlAdapter;

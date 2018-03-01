@@ -1,8 +1,8 @@
 package cn.droidlover.xdroidmvp.demo;
 
+import android.app.Application;
 import android.content.Context;
 
-import cn.droidlover.xdroidmvp.demo.commonui.scene.SceneApplication;
 import cn.droidlover.xdroidmvp.net.NetError;
 import cn.droidlover.xdroidmvp.net.NetProvider;
 import cn.droidlover.xdroidmvp.net.RequestHandler;
@@ -15,7 +15,7 @@ import okhttp3.OkHttpClient;
  * Created by wanglei on 2016/12/31.
  */
 
-public class MyApplication extends SceneApplication implements Thread.UncaughtExceptionHandler{
+public class MyApplication extends Application implements Thread.UncaughtExceptionHandler{
 
     private static Context context;
 

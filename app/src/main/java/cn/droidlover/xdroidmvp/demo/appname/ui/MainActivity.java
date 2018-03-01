@@ -13,9 +13,9 @@ import java.util.List;
 import butterknife.BindView;
 import cn.droidlover.xdroidmvp.base.XFragmentAdapter;
 import cn.droidlover.xdroidmvp.demo.R;
-import cn.droidlover.xdroidmvp.demo.appname.ui.fragment.GanhuoFragment;
-import cn.droidlover.xdroidmvp.demo.appname.ui.fragment.GirlFragment;
-import cn.droidlover.xdroidmvp.demo.appname.ui.fragment.HomeFragment;
+import cn.droidlover.xdroidmvp.demo.appname.fragment.GanhuoFragment;
+import cn.droidlover.xdroidmvp.demo.appname.fragment.GirlFragment;
+import cn.droidlover.xdroidmvp.demo.appname.fragment.HomeFragment;
 import cn.droidlover.xdroidmvp.mvp.XActivity;
 
 /**

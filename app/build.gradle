@@ -28,8 +28,8 @@ dependencies {
     compile rootProject.ext.dependencies["avi-loading"]
     compile project(":mvp")
     //
-    compile 'com.github.seven332:drawerlayout:0.2.1'
-    compile 'com.github.seven332:yorozuya:0.1.2'
-    compile 'com.github.seven332:yorozuya-thread:0.1.1'
-    compile 'com.github.seven332:yorozuya-collect:0.1.4'
+//    compile 'com.github.seven332:drawerlayout:0.2.1'
+//    compile 'com.github.seven332:yorozuya:0.1.2'
+//    compile 'com.github.seven332:yorozuya-thread:0.1.1'
+//    compile 'com.github.seven332:yorozuya-collect:0.1.4'
 }

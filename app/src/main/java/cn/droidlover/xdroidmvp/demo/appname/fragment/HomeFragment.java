@@ -1,7 +1,7 @@
-package cn.droidlover.xdroidmvp.demo.appname.ui.fragment;
+package cn.droidlover.xdroidmvp.demo.appname.fragment;
 
 import cn.droidlover.xdroidmvp.base.SimpleRecAdapter;
-import cn.droidlover.xdroidmvp.demo.adapter.GanhuoAdapter;
+import cn.droidlover.xdroidmvp.demo.adapter.HomeAdapter;
 import cn.droidlover.xdroidmvp.demo.model.GankResults;
 import cn.droidlover.xdroidmvp.demo.appname.ui.WebActivity;
 import cn.droidlover.xrecyclerview.RecyclerItemCallback;
@@ -11,20 +11,20 @@ import cn.droidlover.xrecyclerview.XRecyclerView;
  * Created by wanglei on 2016/12/31.
  */
 
-public class GanhuoFragment extends BasePagerFragment {
+public class HomeFragment extends BasePagerFragment {
 
-    GanhuoAdapter adapter;
+    HomeAdapter adapter;
 
     @Override
     public SimpleRecAdapter getAdapter() {
         if (adapter == null) {
-            adapter = new GanhuoAdapter(context);
-            adapter.setRecItemClick(new RecyclerItemCallback<GankResults.Item, GanhuoAdapter.ViewHolder>() {
+            adapter = new HomeAdapter(context);
+            adapter.setRecItemClick(new RecyclerItemCallback<GankResults.Item, HomeAdapter.ViewHolder>() {
                 @Override
-                public void onItemClick(int position, GankResults.Item model, int tag, GanhuoAdapter.ViewHolder holder) {
+                public void onItemClick(int position, GankResults.Item model, int tag, HomeAdapter.ViewHolder holder) {
                     super.onItemClick(position, model, tag, holder);
                     switch (tag) {
-                        case GanhuoAdapter.TAG_VIEW:
+                        case HomeAdapter.TAG_VIEW:
                             WebActivity.launch(context, model.getUrl(), model.getDesc());
                             break;
                     }
@@ -41,10 +41,10 @@ public class GanhuoFragment extends BasePagerFragment {
 
     @Override
     public String getType() {
-        return "Android";
+        return "all";
     }
 
-    public static GanhuoFragment newInstance() {
-        return new GanhuoFragment();
+    public static HomeFragment newInstance() {
+        return new HomeFragment();
     }
 }

@@ -1,4 +1,4 @@
-package cn.droidlover.xdroidmvp.demo.appname.ui.fragment;
+package cn.droidlover.xdroidmvp.demo.appname.fragment;
 
 import android.os.Bundle;
 import android.view.View;

@@ -16,9 +16,7 @@ public class WYYActivity extends XActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-
-
-
+    
     private void initToolbar() {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

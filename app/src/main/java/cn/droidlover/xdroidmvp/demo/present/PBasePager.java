@@ -2,7 +2,7 @@ package cn.droidlover.xdroidmvp.demo.present;
 
 import cn.droidlover.xdroidmvp.demo.model.GankResults;
 import cn.droidlover.xdroidmvp.demo.net.Api;
-import cn.droidlover.xdroidmvp.demo.appname.ui.fragment.BasePagerFragment;
+import cn.droidlover.xdroidmvp.demo.appname.fragment.BasePagerFragment;
 import cn.droidlover.xdroidmvp.mvp.XPresent;
 import cn.droidlover.xdroidmvp.net.ApiSubscriber;
 import cn.droidlover.xdroidmvp.net.NetError;
