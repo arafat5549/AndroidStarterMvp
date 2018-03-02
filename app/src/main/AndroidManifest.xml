@@ -26,6 +26,7 @@
 
         <activity android:name=".appname.ui.AboutActivity" />
         <activity android:name=".appname.ui.WebActivity" />
+        <activity android:name=".appname.ui.WYYActivity" />
     </application>
 
 </manifest>

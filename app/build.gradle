@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
@@ -11,6 +12,8 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
+
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -23,13 +26,27 @@ android {
 
 
 dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     apt rootProject.ext.dependencies["butterknife-apt"]
     compile rootProject.ext.dependencies["avi-loading"]
     compile project(":mvp")
     //
-//    compile 'com.github.seven332:drawerlayout:0.2.1'
-//    compile 'com.github.seven332:yorozuya:0.1.2'
-//    compile 'com.github.seven332:yorozuya-thread:0.1.1'
-//    compile 'com.github.seven332:yorozuya-collect:0.1.4'
+    compile 'com.mikepenz:materialdrawer:6.0.6'
+    compile 'com.mikepenz:google-material-typeface:3.0.1.1.original@aar'
+    compile 'com.mikepenz:fontawesome-typeface:5.0.6.0@aar'
+    compile 'com.mikepenz:octicons-typeface:3.0.0.1@aar'
+    //
+    compile 'com.github.mancj:MaterialSearchBar:0.7.6'
+    //
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+}
+repositories {
+    mavenCentral()
 }

@@ -5,4 +5,8 @@
         android:id="@+id/action_droid"
         android:title="关于「XDroid」"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_test"
+        android:title="测试类"
+        app:showAsAction="never" />
 </menu>

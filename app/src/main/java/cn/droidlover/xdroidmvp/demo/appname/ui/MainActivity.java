@@ -5,7 +5,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
+
+import com.mancj.materialsearchbar.MaterialSearchBar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,12 +26,15 @@ import cn.droidlover.xdroidmvp.mvp.XActivity;
  */
 
 public class MainActivity extends XActivity {
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
+//    @BindView(R.id.toolbar)
+//    Toolbar toolbar;
     @BindView(R.id.tabLayout)
     TabLayout tabLayout;
     @BindView(R.id.viewPager)
     ViewPager viewPager;
+
+//    @BindView(R.id.searchBar)
+//    MaterialSearchBar searchBar;
 
     List<Fragment> fragmentList = new ArrayList<>();
     String[] titles = {"首页", "干货", "妹子"};
@@ -38,7 +44,7 @@ public class MainActivity extends XActivity {
 
     @Override
     public void initData(Bundle savedInstanceState) {
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         fragmentList.clear();
         fragmentList.add(HomeFragment.newInstance());
@@ -52,6 +58,7 @@ public class MainActivity extends XActivity {
         viewPager.setOffscreenPageLimit(3);
 
         tabLayout.setupWithViewPager(viewPager);
+        //searchBar.bringToFront();
     }
 
     @Override
@@ -69,6 +76,10 @@ public class MainActivity extends XActivity {
         switch (item.getItemId()) {
             case R.id.action_droid:
                 AboutActivity.launch(context);
+                break;
+            case R.id.action_test:
+                WYYActivity.launch(context);
+                Log.d("Test","aaaaaaaaaaaaaaaaaaaaaa");
                 break;
         }
         return super.onOptionsItemSelected(item);
